@@ -1,0 +1,270 @@
+import { createGlobalStyle } from "styled-components";
+
+const primaryColor = '0, 0';
+
+
+const GlobalStyle = createGlobalStyle`
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box
+}
+
+html{
+    @media (max-width: 1700px){
+        font-size: 75%;
+    }
+    
+}
+
+body{
+    background: hsl(${primaryColor}, 0%) !important;
+    font-family: 'Baloo 2',cursive;
+    overflow-x: hidden;
+}
+button{
+    border: none;
+    font-weight: bold;
+    font-size: 1.1.rem;
+    cursor: pointer;
+    padding: 1rem 2rem;
+    background: transparent;
+    transition: all 0.5s ease;
+    border-radius: 0.70909rem;
+    white-space: nowrap;
+    
+    &:hover{
+        background-color: #ffcc0a;
+        color: #000;
+    }
+}
+    h2{
+        font-weight: lighter;
+    }
+    h3{
+        color: white;
+    }
+    h4{
+        font-weight: bold;
+        font-size: 1.4rem
+       
+    }
+    a{
+        font-size: 1.3rem;
+    }
+    span{
+        font-weight: bold;
+        color:#23d997;
+    }
+    p{
+        color: #ccc;
+        font-size: 1.3rem;
+        line-height: 150%;
+    }
+    ul{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: row;
+        column-gap: 2rem;
+        width: 100%;
+        margin: 0 auto;
+
+        li{
+            list-style: none;
+        }
+    }
+    
+    /* ===================================== RE-USABLE STYLES ==================================*/
+
+    /* ------------------------------------- FONTS  ------------------------------*/
+    .title{
+        color: #fff;
+        text-align: center;
+        font-family: 'Baloo 2',cursive;
+        font-size: 2rem !important;
+        font-style: normal;
+        font-weight: 600 !important;
+        line-height: 123.2%;
+    }
+
+    /* ------------------------------------- PADDING DISPLAY  ------------------------------*/
+    .p_1{
+        padding:1rem;
+    }
+    .py_2{
+        padding-top:2rem;
+        padding-bottom:2rem;
+    }
+    .px_5{
+        padding-right:5rem;
+        padding-left:5rem;
+    }
+     /* ------------------------------------- MARGIN DISPLAY  ------------------------------*/
+    .m_auto{
+        margin: 0 auto;
+    }
+    .m_top_1{
+        margin-top: 1rem;
+    }
+   
+      /* ------------------------------------- Image DISPLAY  ------------------------------*/
+      .img_fit{
+        width:100%;
+        height: 100%;
+        object-fit: cover;
+    }
+
+      /* ------------------------------------- BORDER DISPLAY  ------------------------------*/
+      .border_radius_sm{
+        border-radius:1rem;
+    }
+
+    /* ------------------------------------- COLORS  ------------------------------*/
+    .text__color{
+        color:hsl(${primaryColor}, 58%) !important;
+    }
+    .primary_color{
+        color:hsl(${primaryColor}, 0%);
+    }
+    .secondary_color{
+        color:hsl(${primaryColor}, 4%);       
+    }   
+    .subheading_color{
+        color:hsl(${primaryColor}, 31%) !important; 
+    }
+    .bg_color_secondary{
+        background: hsl(${primaryColor}, 4%); ;
+    }
+    .bg_black{
+        background: hsl(${primaryColor}, 0%);
+    }
+    .card__height{
+        height: 45vh !important;
+    }
+    .body__color{
+        background: hsl(${primaryColor}, 11%) !important;
+    }
+    .text_justify{
+        text-align: justify !important;
+    }
+    .text_center{
+        text-align: center !important;
+    }
+    .text_left{
+        text-align: left !important;
+    }
+
+    .text_right{
+        text-align: right !important;
+    }
+
+      /* ------------------------------------- Text Wrap DISPLAY  ------------------------------*/
+      .no_wrap{
+        white-space: nowrap;
+      }
+
+
+      /* ------------------------------------- FLEX DISPLAY  ------------------------------*/
+
+    .d_flex_column{
+        display: flex;
+        justify-content:center;
+        align-items: flex-start;
+        flex-direction: column;
+    }
+
+    .d_flex_row{
+        display: flex;       
+        flex-direction: row;
+    }
+    .flex_wrap{
+        flex-wrap: wrap;
+    }
+    .justify_content_space_between{
+        justify-content:space-between;
+    }
+    .flex_1{
+        flex: 1;
+    }
+
+    .justify_content_center{
+        justify-content:center;
+    }
+
+    .align_items_start{
+        align-items: flex-start;
+    }
+    .align_items_end{
+        align-items: flex-end;
+    }
+    .align_items_center{
+        align-items: center;
+    }
+
+/* ------------ element width ------ */
+    .w_100{
+        width: 100%;
+    }
+    .w_80{
+        width: 80%;
+    }
+    .w_70{
+        width: 80%;
+    }
+    .w_60{
+        width: 60%;
+    }
+
+    /* ------------ row gap ------ */
+    .row_gap_1{
+        row-gap: 1rem;
+    }
+    .row_gap_2{
+        row-gap: 2rem;
+    }
+    .row_gap_3{
+        row-gap: 3rem;
+    }
+
+     /* ------------ row gap ------ */
+     .col_gap_1{
+        column-gap: 1rem;
+     }
+
+
+
+    /* ------------------------------------- BUTTONS DISPLAY  ------------------------------*/
+
+    .secondary_btn{       
+        border: 2px solid #ffcc0a;
+        color: #fff;
+        text-align: center;
+        font-family: "Baloo 2",cursive;
+        font-size: 1.27273rem;
+        font-style: normal;
+        font-weight: 500;
+        line-height: normal;
+        margin: 0;
+        padding: .5rem 4rem;
+        width: 100%;
+    }
+    .content{
+        color: #949494;         
+        font-size: 1.16364rem;
+        font-style: normal;
+        font-weight: 400;
+        line-height: 123.2%;
+        width: 100%;
+    }
+    
+    .circle{
+    height: 5rem;
+    width: 5rem;
+    border-radius: 50%;
+    background: hsl(${primaryColor}, 8%);
+  }
+`;
+
+export default GlobalStyle;
