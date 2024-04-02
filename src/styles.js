@@ -15,19 +15,19 @@ export const About = styled(motion.div)`
     padding: 2rem 2rem;
     text-align: center;
   }
-`;
+`;  
 export const CardBottomText = styled.div`
     position: absolute;
-    bottom: -7rem;
-    left: 0;
-    background: #0d0d0d;
+    bottom: -11rem;
+    left: -5px;
+    background: #fff8ef;
     color: #949494;
     padding: 1rem 1rem 2rem 1rem;
     border-radius: 0 0 1rem 1rem;
-    width: 100%;
+    width: 49rem;
 
     h3{
-        color: #D9D9D9;
+        color: #757575;
         font-family: 'Baloo 2', cursive;
         font-size: 1.7rem;
         font-style: normal;
@@ -40,6 +40,7 @@ export const CardBottomText = styled.div`
         font-size: 1.4rem;
         line-height: 2rem;
         font-weight: normal;
+        color: #757575;
     }
     @media (max-width: 768px) {
       padding: .5rem 1rem 2rem 1rem;

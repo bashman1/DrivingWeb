@@ -1,8 +1,8 @@
 import React from "react";
 //Import Icons
 import product_design from "../../img/aboutUsPageImgs/product_design.png";
-import digital_marketing from "../../img/aboutUsPageImgs/digital_marketing.png";
-import brand_design from "../../img/aboutUsPageImgs/brand_design.png";
+import exploreCareer from "../../img/explore-career.svg";
+import becomeDriver from "../../img/become-driver.svg";
 
 
 import { motion } from "framer-motion";
@@ -23,12 +23,12 @@ const AboutServices = () => {
     >
       <StyledAboutServices>
         <h2>
-          Our Services
+          Join Us
         </h2>
         <Cards>
           <Card>
             <div className="icon">
-              <img alt="icon" src={brand_design} />             
+              <img alt="icon" src={exploreCareer} />             
             </div>   
             <CardBottomText >
                 <h3>Brand Design</h3>
@@ -37,21 +37,12 @@ const AboutServices = () => {
           </Card>
           <Card>
             <div className="icon">
-              <img alt="icon" src={product_design} />             
+              <img alt="icon" src={becomeDriver} />             
             </div>   
             <CardBottomText>
                 <h3>Product Design</h3>
                 <p className="text__color">We have put a number of corporate brands into a better market position simply by the revamping them.</p>
             </CardBottomText>        
-          </Card>
-          <Card>
-            <div className="icon">
-              <img alt="icon" src={digital_marketing} />
-            </div>
-            <CardBottomText>
-                <h3>Digital Marketing</h3>
-                <p className="text__color">We have put a number of corporate brands into a better market position simply by the revamping them.</p>
-            </CardBottomText>
           </Card>
          
         </Cards>
@@ -67,7 +58,7 @@ const Services = styled(motion.div)`
   align-items: center;
   justify-content: flex-start;
   margin-top:1rem;
-  color: white;
+  color: #757575 !important;
   h2 {
     padding-bottom: 4rem;
     font-size: 3rem;
@@ -94,14 +85,12 @@ const Services = styled(motion.div)`
 
 const StyledAboutServices = styled(Description)`
   height: 100%;
-  background: #000;
   width:100%;
-  padding: 5rem 10rem 5rem 11rem;
+  padding: 2rem 10rem 5rem 11rem;
   display: flex;
   justify-content:flex-start;
   align-items: center;
   flex-direction: column;
-
   @media (max-width: 768px) {
     padding: 0 1.5rem;
     min-height: 50vh;
@@ -120,6 +109,7 @@ const Cards = styled.div`
   @media (max-width: 1300px) {
     justify-content: center;
   }
+  
   @media (max-width: 768px) {
     flex-wrap: nowrap;
     overflow-x: scroll;
@@ -129,20 +119,21 @@ const Cards = styled.div`
   }
 `;
 const Card = styled.div`
-flex: 1 0 25rem;
+  border-radius: 1rem;
+  flex: 1 0 25rem;
   position: relative;
-  height: 40vh;
-  
+  max-height: 40vh;
+  border: 5px solid #fff8ef;
+
   .icon {
     display: flex;
     align-items: center;
     justify-content: center;
     
     img{
-      width: 100%;
-      height: 100%;
-      object-fit: cover;
-      border-radius: 1rem;
+      width: 27rem;
+      height: 40vh;
+      
     }
   }
 

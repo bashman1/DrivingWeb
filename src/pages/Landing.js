@@ -25,15 +25,14 @@ const Landing = () => {
       animate="show"
     >
       <AboutSection />
-      <OurClients />
       <AboutServices />
-      <OurWorks />
+       {/*<OurWorks />
       <OurMilestones/>
       <StudioSpace />
       <Mikolo />     
       <AboutPato /> 
       <ScrollTop />
-      <Footer/>
+      <Footer/> */}
     </motion.div>
   );
 };
