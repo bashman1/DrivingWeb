@@ -1,6 +1,6 @@
 import { createGlobalStyle } from "styled-components";
 
-const primaryColor = '0, 0';
+const primaryColor = '0, 100%';
 
 
 const GlobalStyle = createGlobalStyle`
@@ -19,7 +19,7 @@ html{
 }
 
 body{
-    background: hsl(${primaryColor}, 0%) !important;
+    background: hsl(${primaryColor}, 100%) !important;
     font-family: 'Baloo 2',cursive;
     overflow-x: hidden;
 }
@@ -58,7 +58,7 @@ button{
         color:#23d997;
     }
     p{
-        color: #ccc;
+        color: hsl(${primaryColor}, 80%);
         font-size: 1.3rem;
         line-height: 150%;
     }
@@ -88,7 +88,13 @@ button{
         font-weight: 600 !important;
         line-height: 123.2%;
     }
+.text_color_gradient{
+    background: linear-gradient(78deg, hsl(${primaryColor}, 25%) 0%,hsl(${primaryColor}, 25%) 100%);
 
+      background-clip: text;
+      -webkit-background-clip: text;
+      -webkit-text-fill-color: transparent;
+}
     /* ------------------------------------- PADDING DISPLAY  ------------------------------*/
     .p_1{
         padding:1rem;
@@ -120,14 +126,40 @@ button{
       .border_radius_sm{
         border-radius:1rem;
     }
+    .border__color_1{
+        border:1px solid hsl(${primaryColor}, 25%);
+    }
+    .border__color_2{
+        border:2px solid hsl(${primaryColor}, 35%);
+    }
+    .border__color_3{
+        border:3px solid hsl(${primaryColor}, 25%);
+    }
+    .border__color_4{
+        border:4px solid hsl(${primaryColor}, 35%);
+    }
+    .border__color_5{
+        border:5px solid hsl(${primaryColor}, 98%);
+    }
 
     /* ------------------------------------- COLORS  ------------------------------*/
+ 
     .text__color{
         color:hsl(${primaryColor}, 58%) !important;
     }
-    .primary_color{
-        color:hsl(${primaryColor}, 0%);
+    .secondary_txt_color{
+        color:hsl(${primaryColor}, 98%) !important;
     }
+    .primary_color{
+        color:hsl(${primaryColor}, 95%);
+    }
+    .primary_color_75{
+        color:hsl(${primaryColor}, 75%);
+    }
+    .primary_bg{
+        background-color:hsl(${primaryColor}, 25%);
+    }
+    
     .secondary_color{
         color:hsl(${primaryColor}, 4%);       
     }   

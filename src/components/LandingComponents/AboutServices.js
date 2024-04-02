@@ -26,22 +26,22 @@ const AboutServices = () => {
           Join Us
         </h2>
         <Cards>
-          <Card>
+          <Card className="border__color_5">
             <div className="icon">
               <img alt="icon" src={exploreCareer} />             
             </div>   
-            <CardBottomText >
+            <CardBottomText className="primary_bg">
                 <h3>Brand Design</h3>
                 <p className="text__color">We have put a number of corporate brands into a better market position simply by the revamping them.</p>
             </CardBottomText>        
           </Card>
-          <Card>
+          <Card className="border__color_5">
             <div className="icon">
               <img alt="icon" src={becomeDriver} />             
             </div>   
-            <CardBottomText>
-                <h3>Product Design</h3>
-                <p className="text__color">We have put a number of corporate brands into a better market position simply by the revamping them.</p>
+            <CardBottomText className="primary_bg">
+                <h3 className="primary_color">Product Design</h3>
+                <p className="text__color primary_color_75">We have put a number of corporate brands into a better market position simply by the revamping them.</p>
             </CardBottomText>        
           </Card>
          
@@ -123,7 +123,6 @@ const Card = styled.div`
   flex: 1 0 25rem;
   position: relative;
   max-height: 40vh;
-  border: 5px solid #fff8ef;
 
   .icon {
     display: flex;

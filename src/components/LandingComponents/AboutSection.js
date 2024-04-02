@@ -18,7 +18,7 @@ const AboutSection = () => {
 
         <motion.div className="aboutHeader">
           <Hide>
-            <motion.h2 className="landing__title" variants={titleAnim}>
+            <motion.h2 className="landing__title text_color_gradient" variants={titleAnim}>
               We are here to inject brands with infectious energy in finding.
             </motion.h2>
           </Hide>
@@ -127,6 +127,7 @@ const AboutDescription = styled(Description)`
     display: flex;
     flex-direction: column;
     row-gap: 3rem;
+
     h2 {
       text-align: left;
       font-family: "Baloo 2", cursive;
@@ -135,10 +136,6 @@ const AboutDescription = styled(Description)`
       font-weight: 700;
       line-height: 100.7%;
 
-      background: linear-gradient(78deg, #f00 0%, #ffcc0a 100%);
-      background-clip: text;
-      -webkit-background-clip: text;
-      -webkit-text-fill-color: transparent;
     }
 
     @media only screen and (max-width: 768px) {
