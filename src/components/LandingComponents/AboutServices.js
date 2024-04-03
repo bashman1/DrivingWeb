@@ -32,7 +32,7 @@ const AboutServices = () => {
             </div>   
             <CardBottomText className="primary_bg">
                 <h3>Brand Design</h3>
-                <p className="text__color">We have put a number of corporate brands into a better market position simply by the revamping them.</p>
+                <p className="text__color_95">We have put a number of corporate brands into a better market position simply by the revamping them.</p>
             </CardBottomText>        
           </Card>
           <Card className="border__color_5">
@@ -41,7 +41,7 @@ const AboutServices = () => {
             </div>   
             <CardBottomText className="primary_bg">
                 <h3 className="primary_color">Product Design</h3>
-                <p className="text__color primary_color_75">We have put a number of corporate brands into a better market position simply by the revamping them.</p>
+                <p className="text__color_95 primary_color_75">We have put a number of corporate brands into a better market position simply by the revamping them.</p>
             </CardBottomText>        
           </Card>
          

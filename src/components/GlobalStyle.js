@@ -126,8 +126,14 @@ button{
       .border_radius_sm{
         border-radius:1rem;
     }
+    .border__circle{
+        border-radius:50%;
+    }
     .border__color_1{
         border:1px solid hsl(${primaryColor}, 25%);
+    }
+    .border__color_1_a{
+        border:1px solid hsla(${primaryColor}, 25%,.5);
     }
     .border__color_2{
         border:2px solid hsl(${primaryColor}, 35%);
@@ -145,7 +151,10 @@ button{
     /* ------------------------------------- COLORS  ------------------------------*/
  
     .text__color{
-        color:hsl(${primaryColor}, 58%) !important;
+        color:hsl(${primaryColor}, 25%) !important;
+    }
+    .text__color_95{
+        color:hsla(${primaryColor}, 95%,.7) !important;
     }
     .secondary_txt_color{
         color:hsl(${primaryColor}, 98%) !important;
@@ -156,9 +165,6 @@ button{
     .primary_color_75{
         color:hsl(${primaryColor}, 75%);
     }
-    .primary_bg{
-        background-color:hsl(${primaryColor}, 25%);
-    }
     
     .secondary_color{
         color:hsl(${primaryColor}, 4%);       
@@ -166,8 +172,13 @@ button{
     .subheading_color{
         color:hsl(${primaryColor}, 31%) !important; 
     }
+
+    /* ------------------------------------- BACKGROUND COLORS ------------------------------*/
     .bg_color_secondary{
         background: hsl(${primaryColor}, 4%); ;
+    }
+    .primary_bg{
+        background-color:hsl(${primaryColor}, 25%);
     }
     .bg_black{
         background: hsl(${primaryColor}, 0%);
@@ -175,8 +186,8 @@ button{
     .card__height{
         height: 45vh !important;
     }
-    .body__color{
-        background: hsl(${primaryColor}, 11%) !important;
+    .primary_bg_95{
+        background: hsl(${primaryColor}, 95%) !important;
     }
     .text_justify{
         text-align: justify !important;
@@ -206,7 +217,12 @@ button{
         align-items: flex-start;
         flex-direction: column;
     }
-
+    .d_flex_column_center{
+        display: flex;
+        justify-content:center;
+        align-items: center;
+        flex-direction: column;
+    }
     .d_flex_row{
         display: flex;       
         flex-direction: row;

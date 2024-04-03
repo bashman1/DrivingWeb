@@ -1,8 +1,9 @@
 import React from "react";
 //Import Icons
-import video_interviews from "../../img/aboutUsPageImgs/video_interviews.jpeg";
-import product_launches from "../../img/aboutUsPageImgs/product_launches.jpeg";
-import aboutUs1 from "../../img/about_us_1.png";
+import trusted from "../../img/trusted.svg";
+import cashless from "../../img/cashless.svg";
+import movingCar from "../../img/moving-car.svg";
+import negotiation from "../../img/negotiation.svg";
 
 import { motion } from "framer-motion";
 //Styles
@@ -20,43 +21,44 @@ const OurWorks = () => {
       initial="hidden"
       ref={element}
     >
-      <StyledAboutServices className="about_service">
+      <StyledAboutServices className="about_service primary_bg_95">
         <StyledWorksTop>
-          <h2>Our Works</h2>
-          <ul>
-            <li>All Products</li>
-            <li>Brand Design</li>
-            <li>UI/UX Design</li>
-            <li>Digital Marketing</li>
-            <li>Studio Space</li>
-          </ul>
+          <motion.img
+            variants={movingCar}
+            src={movingCar}
+            alt="guy with a camera"
+          />
+          <h2 className="text__color">Now move the way you deserve with our SafeCars</h2>
         </StyledWorksTop>
         <Cards>
           <Card>
             <div className="icon">
-              <img alt="icon" src={video_interviews} />
+              <img alt="icon" src={cashless} />
             </div>
             <StyledWorksCardBottom>
               <h3>Video Interviews</h3>
-              <p className="text__color">Custom Quote</p>
+              <p className="text__color">A cashless, no hassle experience, with SafeBoda wallet</p>
             </StyledWorksCardBottom>
           </Card>
+
           <Card>
             <div className="icon">
-              <img alt="icon" src={aboutUs1} />
+              <img alt="icon" src={trusted} />
             </div>
+
             <StyledWorksCardBottom>
               <h3>Video Ads</h3>
-              <p className="text__color">Custom Quote</p>
+              <p className="text__color">Safe and convenient. Ride with trained, trusted drivers</p>
             </StyledWorksCardBottom>
           </Card>
+
           <Card>
             <div className="icon">
-              <img alt="icon" src={product_launches} />
+              <img alt="icon" src={negotiation} />
             </div>
             <StyledWorksCardBottom>
               <h3>Product Launches</h3>
-              <p className="text__color">Custom Quote</p>
+              <p className="text__color">Safe and convenient. Ride with trained, trusted drivers</p>
             </StyledWorksCardBottom>
           </Card>
         </Cards>
@@ -76,7 +78,11 @@ const Services = styled(motion.div)`
  
   h2 {
     font-size: 3rem;
-    text-align: center;
+  text-align: center;
+  white-space: normal;
+  width: 35rem;
+  margin: 0 auto 4rem auto;
+  line-height: 3.7rem;
   }
 
   @media (max-width: 1300px) {
@@ -100,7 +106,6 @@ const Services = styled(motion.div)`
 
 const StyledAboutServices = styled(Description)`
   height: 100%;
-  background: #000;
   width: 100%;
   padding: 5rem 10rem 5rem 11rem;
 
@@ -118,18 +123,9 @@ const StyledWorksTop = styled.div`
   flex-direction: column;
   width: 100%;
 
-  ul {
-    width: 50%;
-    padding: 3rem 0;
+  img {
+    width: 13rem;
     margin: 0 auto;
-
-    li {
-      flex: 1;
-      text-align: center;
-      font-size: 1.2rem;
-      font-weight: bold;
-      white-space: nowrap;
-    }
   }
 
   @media (max-width: 768px) {
@@ -182,19 +178,52 @@ const Card = styled.div`
     display: flex;
     align-items: center;
     justify-content: center;
-    height: 100%;
 
     img {
-      width: 100%;
-      height: 100%;
+      width: 15rem;
       object-fit: cover;
       border-radius: 1rem;
     }
   }
 `;
 
-const StyledWorksCardBottom = styled(CardBottomText)`
-  padding: 0rem 1rem 1rem 1rem;
+const StyledWorksCardBottom = styled(motion.div)`
+    color: #949494;
+    padding: 1rem 1rem 2rem 1rem;
+    border-radius: 0 0 1rem 1rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+    h3{
+        font-family: 'Baloo 2', cursive;
+        font-size: 1.7rem;
+        font-style: normal;
+        font-weight: 700;
+        padding:1rem 0;
+        text-align: center;
+    }
+    p{
+        font-size: 1.4rem;
+        line-height: 2rem;
+        font-weight: normal;
+        text-align: center;
+    }
+    @media (max-width: 768px) {
+      padding: .5rem 1rem 2rem 1rem;
+      bottom: -5rem;
+      h3{
+        padding:0;
+      }
+      p{
+        font-size: 1.3rem;
+        line-height: 1.7rem;
+        font-weight: normal;
+        text-align: left;
+      }
+    }
+   
+  
 `;
 
 export default OurWorks;
