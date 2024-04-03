@@ -1,6 +1,6 @@
 import { createGlobalStyle } from "styled-components";
 
-const primaryColor = '0, 0';
+const primaryColor = '0, 100%';
 
 
 const GlobalStyle = createGlobalStyle`
@@ -19,7 +19,7 @@ html{
 }
 
 body{
-    background: hsl(${primaryColor}, 0%) !important;
+    background: hsl(${primaryColor}, 100%) !important;
     font-family: 'Baloo 2',cursive;
     overflow-x: hidden;
 }
@@ -58,7 +58,7 @@ button{
         color:#23d997;
     }
     p{
-        color: #ccc;
+        color: hsl(${primaryColor}, 80%);
         font-size: 1.3rem;
         line-height: 150%;
     }
@@ -88,7 +88,13 @@ button{
         font-weight: 600 !important;
         line-height: 123.2%;
     }
+.text_color_gradient{
+    background: linear-gradient(78deg, hsl(${primaryColor}, 25%) 0%,hsl(${primaryColor}, 25%) 100%);
 
+      background-clip: text;
+      -webkit-background-clip: text;
+      -webkit-text-fill-color: transparent;
+}
     /* ------------------------------------- PADDING DISPLAY  ------------------------------*/
     .p_1{
         padding:1rem;
@@ -120,22 +126,59 @@ button{
       .border_radius_sm{
         border-radius:1rem;
     }
+    .border__circle{
+        border-radius:50%;
+    }
+    .border__color_1{
+        border:1px solid hsl(${primaryColor}, 25%);
+    }
+    .border__color_1_a{
+        border:1px solid hsla(${primaryColor}, 25%,.5);
+    }
+    .border__color_2{
+        border:2px solid hsl(${primaryColor}, 35%);
+    }
+    .border__color_3{
+        border:3px solid hsl(${primaryColor}, 25%);
+    }
+    .border__color_4{
+        border:4px solid hsl(${primaryColor}, 35%);
+    }
+    .border__color_5{
+        border:5px solid hsl(${primaryColor}, 98%);
+    }
 
     /* ------------------------------------- COLORS  ------------------------------*/
+ 
     .text__color{
-        color:hsl(${primaryColor}, 58%) !important;
+        color:hsl(${primaryColor}, 25%) !important;
+    }
+    .text__color_95{
+        color:hsla(${primaryColor}, 95%,.7) !important;
+    }
+    .secondary_txt_color{
+        color:hsl(${primaryColor}, 98%) !important;
     }
     .primary_color{
-        color:hsl(${primaryColor}, 0%);
+        color:hsl(${primaryColor}, 95%);
     }
+    .primary_color_75{
+        color:hsl(${primaryColor}, 75%);
+    }
+    
     .secondary_color{
         color:hsl(${primaryColor}, 4%);       
     }   
     .subheading_color{
         color:hsl(${primaryColor}, 31%) !important; 
     }
+
+    /* ------------------------------------- BACKGROUND COLORS ------------------------------*/
     .bg_color_secondary{
         background: hsl(${primaryColor}, 4%); ;
+    }
+    .primary_bg{
+        background-color:hsl(${primaryColor}, 25%);
     }
     .bg_black{
         background: hsl(${primaryColor}, 0%);
@@ -143,8 +186,8 @@ button{
     .card__height{
         height: 45vh !important;
     }
-    .body__color{
-        background: hsl(${primaryColor}, 11%) !important;
+    .primary_bg_95{
+        background: hsl(${primaryColor}, 95%) !important;
     }
     .text_justify{
         text-align: justify !important;
@@ -174,7 +217,12 @@ button{
         align-items: flex-start;
         flex-direction: column;
     }
-
+    .d_flex_column_center{
+        display: flex;
+        justify-content:center;
+        align-items: center;
+        flex-direction: column;
+    }
     .d_flex_row{
         display: flex;       
         flex-direction: row;

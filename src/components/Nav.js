@@ -55,13 +55,14 @@ const Nav = () => {
                 src={UGFlag}
                 alt="guy with a camera"
                 onClick={hideMenu}
+                className="border__color_2"
             />
             </Link>
           </li>
           <li>
             <Link to="/get-in-touch" className="btn_container"
           onClick={hideMenu}>
-          <button className="get_in_touch">DOWNLOAD APP</button>
+          <button className="get_in_touch primary_bg primary_color">DOWNLOAD APP</button>
         </Link>
           </li>
         </ul>
@@ -160,9 +161,8 @@ const StyledNav = styled.nav`
         }
 
         img{
-          border: 2px solid #f80;
-          border-radius: 0.90909rem;
-          width: 3rem;
+          border-radius: 10rem;
+          width: 7rem;
         }
       }
     }
@@ -178,8 +178,6 @@ const StyledNav = styled.nav`
         align-items: center;
 
         border-radius: 0.90909rem;
-        background: #ffcc0a;
-        color: #000000;
         transition: background 0.75s ease-in-out;
 
         &:hover {

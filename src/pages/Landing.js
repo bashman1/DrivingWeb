@@ -26,9 +26,9 @@ const Landing = () => {
     >
       <AboutSection />
       <AboutServices />
-       {/*<OurWorks />
+      <OurWorks />
       <OurMilestones/>
-      <StudioSpace />
+       {/*<StudioSpace />
       <Mikolo />     
       <AboutPato /> 
       <ScrollTop />
