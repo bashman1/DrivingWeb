@@ -88,13 +88,13 @@ button{
         font-weight: 600 !important;
         line-height: 123.2%;
     }
-.text_color_gradient{
-    background: linear-gradient(78deg, hsl(${primaryColor}, 25%) 0%,hsl(${primaryColor}, 25%) 100%);
+    .text_color_gradient{
+        background: linear-gradient(78deg, hsl(${primaryColor}, 25%) 0%,hsl(${primaryColor}, 25%) 100%);
 
-      background-clip: text;
-      -webkit-background-clip: text;
-      -webkit-text-fill-color: transparent;
-}
+        background-clip: text;
+        -webkit-background-clip: text;
+        -webkit-text-fill-color: transparent;
+    }
     /* ------------------------------------- PADDING DISPLAY  ------------------------------*/
     .p_1{
         padding:1rem;
@@ -174,6 +174,9 @@ button{
     }
 
     /* ------------------------------------- BACKGROUND COLORS ------------------------------*/
+    .bg_color_secondary{
+        background: hsl(${primaryColor}, 4%); ;
+    }
     .bg_color_secondary{
         background: hsl(${primaryColor}, 4%); ;
     }

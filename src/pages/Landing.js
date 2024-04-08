@@ -1,12 +1,9 @@
 import React from "react";
 //Page Components
 import AboutSection from "../components/LandingComponents/AboutSection";
-import OurClients from "../components/LandingComponents/OurClients";
 import AboutServices from "../components/LandingComponents/AboutServices";
 import OurWorks from "../components/LandingComponents/OurWorks";
 import OurMilestones from "../components/LandingComponents/OurMilestones";
-import StudioSpace from "../components/LandingComponents/StudioSpace";
-import Mikolo from "../components/LandingComponents/Mikolo";
 import AboutPato from "../components/LandingComponents/AboutPato";
 import Footer from "../components/Footer";
 
@@ -28,11 +25,11 @@ const Landing = () => {
       <AboutServices />
       <OurWorks />
       <OurMilestones/>
-       {/*<StudioSpace />
-      <Mikolo />     
+       {/* <StudioSpace /> */}
+      {/* <Mikolo />      */}
       <AboutPato /> 
       <ScrollTop />
-      <Footer/> */}
+      <Footer/>
     </motion.div>
   );
 };
