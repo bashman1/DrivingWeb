@@ -23,7 +23,7 @@ const OurMilestones = () => {
     >
       <StyledOurMilestones>
         <h2 className="text_color_gradient">Our Services</h2>
-        <p className="text__color">We have put a number of corporate brands into a better market position simply by the revamping them.</p>
+        <p className="text__color">Enjoy the convenience that comes with moving on a SafeBoda and in a SafeCar, for personal use, corporate, and team movements.</p>
         <Cards>
           <Card className="d_flex_column_center">
             <div className="icon border__color_1_a">
@@ -91,7 +91,10 @@ const StyledOurMilestones = styled(Description)`
   align-items: center;
   flex-direction: column;
   row-gap: 2.5rem;
-
+p{
+  width: 31%;
+  text-align: center;
+}
   @media (max-width: 768px) {
     padding: 2rem 0;
     row-gap: 0;

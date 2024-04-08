@@ -19,7 +19,7 @@ const AboutPato = () => {
       initial="hidden"
       ref={element}
     >
-      <StyledAboutPato className="about_pato">
+      <StyledAboutPato className="about_pato primary_bg">
         <Cards>
           <Card>
             <div className="card__top">
@@ -104,7 +104,6 @@ const Services = styled(motion.div)`
 
 const StyledAboutPato = styled(Description)`
   height: 100%;
-  background: #000;
   width: 100%;
   padding: 1rem 0rem;
 
@@ -138,8 +137,7 @@ const Card = styled.div`
   flex-direction: column;
   row-gap: 2rem;
   padding: 5rem;
-  border-radius: 1.81818rem;
-    background: #0B0B0B; 
+  border-radius: 1.81818rem; 
     flex: 1;
 
     .card__top{

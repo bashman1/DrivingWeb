@@ -57,6 +57,7 @@ export const CardBottomText = styled.div`
 
 `;
 export const Description = styled.div`
+
   flex: 1;
   z-index: 2;
 
