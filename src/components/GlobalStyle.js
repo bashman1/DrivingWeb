@@ -88,6 +88,14 @@ button{
         font-weight: 600 !important;
         line-height: 123.2%;
     }
+    .title_1{
+        color: #fff;
+        font-family: 'Baloo 2',cursive;
+        font-size: 2rem !important;
+        font-style: normal;
+        font-weight: 600 !important;
+        line-height: 123.2%;
+    }
     .text_color_gradient{
         background: linear-gradient(78deg, hsl(${primaryColor}, 25%) 0%,hsl(${primaryColor}, 25%) 100%);
 

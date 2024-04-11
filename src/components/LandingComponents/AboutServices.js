@@ -1,8 +1,8 @@
 import React from "react";
 //Import Icons
 import product_design from "../../img/aboutUsPageImgs/product_design.png";
-import exploreCareer from "../../img/explore-career.svg";
-import becomeDriver from "../../img/become-driver.svg";
+import exploreCareer from "../../img/entryforbbidenforpoweroranimaldrivenvehicles.png";
+import becomeDriver from "../../img/drivingvehicleslessthandistanceshownisprohibited.png";
 
 
 import { motion } from "framer-motion";
@@ -128,10 +128,10 @@ const Card = styled.div`
     display: flex;
     align-items: center;
     justify-content: center;
-    
+    margin: 1rem auto;
     img{
-      width: 27rem;
-      height: 40vh;
+      height: 28vh;
+      object-fit: cover;
       
     }
   }

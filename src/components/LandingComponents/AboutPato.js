@@ -4,7 +4,7 @@ import React from "react";
 import { motion } from "framer-motion";
 //Styles
 import { Description } from "../../styles";
-import pato from "../../img/aboutUsPageImgs/pato.jpeg";
+import pato from "../../img/beginningofdualcarriageroad.png";
 
 import styled from "styled-components";
 import { scrollReveal, photoAnim } from "../../animation";

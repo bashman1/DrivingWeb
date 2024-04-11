@@ -1,9 +1,9 @@
 import React from "react";
 //Import Icons
-import deliveryBag from "../../img/delivery-guy.svg";
+import deliveryBag from "../../img/roadworks.png";
 import cashless from "../../img/cashless.svg";
-import movingCar from "../../img/moving-car.svg";
-import bodaGuy from "../../img/boda-guy.svg";
+import movingCar from "../../img/green.png";
+import bodaGuy from "../../img/policelight.png";
 
 import { motion } from "framer-motion";
 //Styles
@@ -133,6 +133,11 @@ const Card = styled.div`
     align-items: center;
     width: 25rem;
     height: 180px;
+  }
+  img{
+    width: 100%;
+    height: 100%;
+    object-fit: contain;
   }
 
   h3 {
