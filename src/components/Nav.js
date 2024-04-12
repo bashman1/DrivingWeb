@@ -20,13 +20,8 @@ const Nav = () => {
   }
   return (
     <StyledNav>
-      <Link id="logo" to="/">
-        <motion.img
-          variants={photoAnim}
-          src={drivingSchLogo}
-          alt="guy with a camera"
-          onClick={hideMenu}
-        />
+      <Link className="text__color title_1" id="logo" to="/">
+       TOP DRIVER UGANDA
       </Link>
 
       <div className={isMobile ? "mobile__menu" : "desktop__menu"}>
@@ -36,7 +31,7 @@ const Nav = () => {
               style={{
                 color: pathname === "/about-us" ? "#ffcc0a" : "white",
               }}
-              to="/about-us"
+              to="/"
               onClick={hideMenu}
             >
               Join Us 
@@ -45,9 +40,9 @@ const Nav = () => {
           <li>
             <Link
               style={{
-                color: pathname === "/services" ? "#ffcc0a" : "white",
+                color: pathname === "/" ? "#ffcc0a" : "white",
               }}
-              to="/services"
+              to="/"
               onClick={hideMenu}
             >
                <motion.img
@@ -60,7 +55,7 @@ const Nav = () => {
             </Link>
           </li>
           <li>
-            <Link to="/get-in-touch" className="btn_container"
+            <Link to="/" className="btn_container"
           onClick={hideMenu}>
           <button className="get_in_touch primary_bg primary_color">DOWNLOAD APP</button>
         </Link>
@@ -128,10 +123,6 @@ const StyledNav = styled.nav`
 
   #logo {
     flex: 1;
-
-    img {
-      width: 9rem;
-    }
   }
   a {
     color: white;

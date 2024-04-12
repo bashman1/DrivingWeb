@@ -1,9 +1,9 @@
 import React from "react";
 //Import Icons
-import trusted from "../../img/trusted.svg";
-import cashless from "../../img/cashless.svg";
-import movingCar from "../../img/moving-car.svg";
-import negotiation from "../../img/negotiation.svg";
+import trusted from "../../img/fillingstation.png";
+import cashless from "../../img/centrelinemarking.png";
+import movingCar from "../../img/ambulance.png";
+import negotiation from "../../img/44heightprohibited.png";
 
 import { motion } from "framer-motion";
 //Styles
@@ -180,9 +180,9 @@ const Card = styled.div`
     justify-content: center;
 
     img {
-      width: 15rem;
       object-fit: cover;
       border-radius: 1rem;
+      height: 13rem;
     }
   }
 `;
