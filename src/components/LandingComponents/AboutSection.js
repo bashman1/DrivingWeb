@@ -1,6 +1,8 @@
 import React from "react";
 import aboutUs1 from "../../img/landing-shade.svg";
-import mobileAppLandingImg from "../../img/mobile-app-landing.svg";
+import mobileAppLandingImg from "../../img/Screenshot-1.png";
+import signsScreen from "../../img/Screenshot-2.png";
+import getStarted from "../../img/Screenshot-3.png";
 import playstoreSvg from "../../img/playstore.svg";
 import applestoreSvg from "../../img/applestore.svg";
 
@@ -28,6 +30,7 @@ const AboutSection = () => {
             Enjoy safe rides with top rated drivers and affordable fares. 
             </motion.p>
           </Hide>
+
           <StyledStoreImages>
             <motion.img
             variants={photoAnim}
@@ -42,12 +45,23 @@ const AboutSection = () => {
           </StyledStoreImages>
         </motion.div>
 
-        <AboutHide>
-        <motion.img
-          variants={photoAnim}
-          src={mobileAppLandingImg}
-          alt="guy with a camera"
-        />
+        <AboutHide className="custom__abouthide">
+          
+          <motion.img
+            variants={photoAnim}
+            src={signsScreen}
+            alt="guy with a camera"
+          />
+           <motion.img
+            variants={photoAnim}
+            src={getStarted}
+            alt="guy with a camera"
+          />
+           <motion.img
+            variants={photoAnim}
+            src={mobileAppLandingImg}
+            alt="guy with a camera"
+          />
         </AboutHide>
 
       </AboutDescription>
@@ -174,46 +188,38 @@ const AboutUsImage = styled(Image)`
   }
 `;
 
-const AboutHide = styled(Hide)`
+const AboutHide = styled(motion.div)`
   display: flex;
-  column-gap: 2rem;
-  flex-wrap: wrap;
+  flex-wrap: nowrap;
+  flex-direction: row;
+  justify-content: center;
+  flex: 1;
+  position: relative;
+  height: 10rem;
 
-  button {
-    border: 2px solid #ffcc0a;
-    transition: all 0.75s ease;
+  img{
+    position: absolute;
+    top: -100% !important;
+    left: 0%;
+    width: auto;
+    height: 30rem;
+    object-fit: cover;
+    border-radius:1rem;
+    transform: rotate(20deg) !important;
 
     &:nth-child(1) {
-      border-radius: 0.70909rem;
-      background: #ffcc0a;
-      color: #000000;
-
-      &:hover {
-        background: #000 !important;
-        color: white;
-        border: 2px solid #ffcc0a;
-      }
+      left: 35%;
     }
     &:nth-child(2) {
-      border-radius: 0.70909rem;
-      border: 2px solid #ffcc0a;
-      color: #ffffff;
+      left: 70%;
     }
   }
-
+  
   @media (max-width: 768px) {
     flex-direction: column;
     width: 100%;
     padding: 0 1.5rem;
 
-    button {
-      flex: 1;
-      padding: 1.5rem 0;
-
-      &:nth-child(1) {
-        margin: 0rem 0 0rem 0 !important;
-      }
-    }
   }
 `;
 export default AboutSection;
