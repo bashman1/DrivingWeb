@@ -23,7 +23,7 @@ const OurMilestones = () => {
     >
       <StyledOurMilestones>
         <h2 className="text_color_gradient">Our Services</h2>
-        <p className="text__color">Enjoy the convenience that comes with moving on a SafeBoda and in a SafeCar, for personal use, corporate, and team movements.</p>
+        <p className="text__color">Enjoy the convenience that comes with moving on a cars and in a SafeCar, for personal use, corporate, and team movements.</p>
         <Cards>
           <Card className="d_flex_column_center">
             <div className="icon border__color_1_a">
@@ -43,7 +43,7 @@ const OurMilestones = () => {
           <div className="icon border__color_1_a">
               <img className="border__circle" alt="icon" src={deliveryBag} />
             </div>
-            <h3 className="text__color">SafeBoda</h3>
+            <h3 className="text__color">cars</h3>
           </Card>
         </Cards>
       </StyledOurMilestones>

@@ -63,8 +63,12 @@ const Footer = () => {
         </Cards>
 
         <FooterBottom>
-          <div className="logo__container title title_2">
-           Top Driver Uganda
+          <div className="logo__container">
+            <motion.img
+              variants={photoAnim}
+              src={drivingSchLogo}
+              alt="pato__profile"
+            />
           </div>
           <div className="socials__container">
             <p>Follow Us</p>
@@ -128,13 +132,11 @@ const StyledFooter = styled(Description)`
 
   .footer-img{
     position: absolute;
-  top: 50%;
-  left: 50%;
-  height: 100%;
-  width: 100%;
-  z-index: -1;
-  transform: translate(-50%,-50%) !important;
-  object-fit: cover;
+    top: 0;
+    left: 0;
+    height: 45rem;
+    width: 100vw;
+    z-index: -1;
   }
 `;
 

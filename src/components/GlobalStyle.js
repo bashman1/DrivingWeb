@@ -1,7 +1,8 @@
 import { createGlobalStyle } from "styled-components";
 
 const primaryColor = '0, 100%';
-
+const blackShade = '194, 57%'
+const greyish ='0, 0%';
 
 const GlobalStyle = createGlobalStyle`
 
@@ -89,12 +90,9 @@ button{
         line-height: 123.2%;
     }
     .title_1{
-        color: #fff;
-        font-family: 'Baloo 2',cursive;
-        font-size: 2rem !important;
-        font-style: normal;
-        font-weight: 600 !important;
-        line-height: 123.2%;
+    }
+    .title_2{
+        font-size: 1.5rem !important;
     }
     .text_color_gradient{
         background: linear-gradient(78deg, hsl(${primaryColor}, 25%) 0%,hsl(${primaryColor}, 25%) 100%);
@@ -102,6 +100,17 @@ button{
         background-clip: text;
         -webkit-background-clip: text;
         -webkit-text-fill-color: transparent;
+    }
+    .lm-fmt{
+        font-weight: 700 !important;
+    }
+    .h6-sb{
+        font-size: 30px !important;
+        line-height: 128% !important;
+    }
+    .bodybig-sb {
+        font-size: 20px !important;
+        line-height: 140% !important;
     }
     /* ------------------------------------- PADDING DISPLAY  ------------------------------*/
     .p_1{
@@ -175,21 +184,26 @@ button{
     }
     
     .secondary_color{
-        color:hsl(${primaryColor}, 4%);       
+        color:hsl(${primaryColor}, 4%) !important;       
     }   
     .subheading_color{
         color:hsl(${primaryColor}, 31%) !important; 
     }
-
+    .black_shade {
+        color: hsl(${blackShade}, 22%) !important;
+    }
+    .greyish{
+        color: hsl(${greyish}, 46%) !important;
+    }
     /* ------------------------------------- BACKGROUND COLORS ------------------------------*/
     .bg_color_secondary{
-        background: hsl(${primaryColor}, 4%); ;
-    }
-    .bg_color_secondary{
-        background: hsl(${primaryColor}, 4%); ;
+        background: hsl(${primaryColor}, 4%); 
     }
     .primary_bg{
         background-color:hsl(${primaryColor}, 25%);
+    }
+    .bg_learnmore_section{
+        background-color: hsl(${primaryColor}, 97%);
     }
     .bg_black{
         background: hsl(${primaryColor}, 0%);
@@ -219,7 +233,11 @@ button{
         white-space: nowrap;
       }
 
-
+   /* ------------------------------------- POSITION ELEMENTS DISPLAY  ------------------------------*/
+   .absolute{
+       position: absolute;
+      }
+   
       /* ------------------------------------- FLEX DISPLAY  ------------------------------*/
 
     .d_flex_column{
@@ -293,6 +311,10 @@ button{
      }
 
 
+    /* ------------------------------------- PADDING DISPLAY  ------------------------------*/
+    .p__0{
+        padding: 0 !important;
+    }
 
     /* ------------------------------------- BUTTONS DISPLAY  ------------------------------*/
 
@@ -317,7 +339,15 @@ button{
         line-height: 123.2%;
         width: 100%;
     }
-    
+    .primary-btn{
+        justify-content: center;
+        width: 40% !important;
+        min-width: 80% !important;
+        max-width: 80% !important;
+        margin-top: 30px;
+        padding: 16px;
+        display: flex;
+    }
     .circle{
     height: 5rem;
     width: 5rem;
