@@ -28,7 +28,7 @@ const OurWorks = () => {
             src={movingCar}
             alt="guy with a camera"
           />
-          <h2 className="text__color">Now move the way you deserve with our SafeCars</h2>
+          <h2 className="text__color">Now move the way you deserve with our cars</h2>
         </StyledWorksTop>
         <Cards>
           <Card>
@@ -37,7 +37,7 @@ const OurWorks = () => {
             </div>
             <StyledWorksCardBottom>
               <h3>Video Interviews</h3>
-              <p className="text__color">A cashless, no hassle experience, with SafeBoda wallet</p>
+              <p className="text__color">A cashless, no hassle experience, with cars wallet</p>
             </StyledWorksCardBottom>
           </Card>
 

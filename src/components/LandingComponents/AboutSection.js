@@ -204,8 +204,8 @@ const AboutHide = styled(motion.div)`
     width: auto;
     height: 30rem;
     object-fit: cover;
-    border-radius:1rem;
-    transform: rotate(20deg) !important;
+    border-radius:2rem;
+    transform: rotate(10deg) !important;
 
     &:nth-child(1) {
       left: 35%;

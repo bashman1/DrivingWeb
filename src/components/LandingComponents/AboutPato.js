@@ -4,7 +4,10 @@ import React from "react";
 import { motion } from "framer-motion";
 //Styles
 import { Description } from "../../styles";
-import pato from "../../img/beginningofdualcarriageroad.png";
+import pato from "../../img/unreal@2x.webp";
+import img1 from "../../img/mobi_img_1.png";
+import img2 from "../../img/mobi_img_2.png";
+import iphone from "../../img/chip_performance_hw__6ytcie74ao22_large_2x.png";
 
 import styled from "styled-components";
 import { scrollReveal, photoAnim } from "../../animation";
@@ -19,56 +22,62 @@ const AboutPato = () => {
       initial="hidden"
       ref={element}
     >
-      <StyledAboutPato className="about_pato primary_bg">
+      <StyledAboutPato className="about_pato bg_learnmore_section">
         <Cards>
-          <Card>
-            <div className="card__top">
-              <div className="profile__img">
+          <Card className="p__0">
+            <div className="lrnmre__card">
+              <div className="card__top iphone__cap absolute">
                 <motion.img
-                  variants={photoAnim}
-                  src={pato}
-                  alt="pato__profile"
-                />
+                      variants={photoAnim}
+                      src={iphone}
+                      alt="pato__profile"
+                    />
               </div>
-              <div className="profile__header">
-                <h3>Patrick Muhumuza</h3>
-                <p>Head of Operations, SchoolPay</p>
-              </div>
+              <div className="card__top first__cap absolute cap__width">
+                <motion.img
+                      variants={photoAnim}
+                      src={img1}
+                      alt="pato__profile"
+                      className="border_radius_sm border__color_1"
+                    />
             </div>
-            <div className="card__bottom">
-              <p>
-                “I worked with the team to create our branding and website for
-                our product. The studio helped us to create this by
-                understanding what we wanted to achieve. Our branding that we
-                achieved is exactly what we set out to achieve and we are very
-                happy with all of the work. I would highly recommend Biara
-                Creative Studio.”
-              </p>
+            <div className="card__top second__cap absolute cap__width">
+              <motion.img
+                    variants={photoAnim}
+                    src={img2}
+                    alt="pato__profile"
+                    className="border_radius_sm border__color_1"
+                  />
+            </div>
+            <div className="card__top third__cap absolute cap__width">
+              <motion.img
+                    variants={photoAnim}
+                    src={img2}
+                    alt="pato__profile"
+                    className="border_radius_sm border__color_1"
+                  />
+            </div>
             </div>
           </Card>
+          
           <Card>
             <div className="card__top">
-              <div className="profile__img">
-                <motion.img
-                  variants={photoAnim}
-                  src={pato}
-                  alt="pato__profile"
-                />
-              </div>
               <div className="profile__header">
-                <h3>Patrick Muhumuza</h3>
-                <p>Head of Operations, SchoolPay</p>
+                <h3 className="black_shade lm-fmt h6-sb">Top Driver Uganda Payments & 
+                  <br />Financial Services
+                </h3>
               </div>
             </div>
             <div className="card__bottom">
-              <p>
+              <p className="greyish bodybig-sb">
                 “I worked with the team to create our branding and website for
                 our product. The studio helped us to create this by
                 understanding what we wanted to achieve. Our branding that we
-                achieved is exactly what we set out to achieve and we are very
-                happy with all of the work. I would highly recommend Biara
-                Creative Studio.”
+                achieved is exactly what we set out to achieve.”
               </p>
+            </div>
+            <div className="btn_container">
+              <button className="get_in_touch secondary_color primary-btn border__color_3">Learn More</button>
             </div>
           </Card>
         </Cards>
@@ -138,14 +147,21 @@ const Card = styled.div`
   row-gap: 2rem;
   padding: 5rem;
   border-radius: 1.81818rem; 
-    flex: 1;
+  flex: 1;
+
+  .lrnmre__card{
+        display: flex;
+        position: relative;
+        width: 100%;
+        height: 100%;
+      }
 
     .card__top{
-        display: flex;
-        justify-content: flex-start;
-        align-items: center;
-        column-gap: 1rem;
-        flex-wrap: wrap;
+      display: flex;
+      justify-content: flex-start;
+      align-items: center;
+      column-gap: 1rem;
+      flex-wrap: wrap;
 
         h3{
             color: #FFF;
@@ -164,15 +180,39 @@ const Card = styled.div`
             font-weight: 500;
             line-height: 92.2%; /* 2.51455rem */
         }
-        .profile__img{
-            
-            img{
-                width: 5rem;
-                height: 5rem;
-                border-radius: 50%;
-                object-fit: cover;
-            }
+        img{
+          object-fit: cover;
+          height: 100%;
+          width: 100%;
         }
+    }
+
+    .iphone__cap{
+      top: 0%;
+      left: 0%;
+      transform: rotate(90deg) !important;
+      transform-origin: 50% 100%;
+      
+      img{
+        height: 18rem;
+      }
+    }
+    .cap__width{
+      width: 20rem;
+      height: 8rem;
+      left: 30% !important;
+    }
+
+    .first__cap{
+      top: 10% !important;
+    }
+    .second__cap{
+      top: 40%;
+
+    }
+    .third__cap{
+      top: 70%;
+     
     }
   .card__bottom{
     p{
