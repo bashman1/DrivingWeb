@@ -27,34 +27,6 @@ const Nav = () => {
       <div className={isMobile ? "mobile__menu" : "desktop__menu"}>
         <ul>
           <li>
-            <Link
-              style={{
-                color: pathname === "/about-us" ? "#ffcc0a" : "white",
-              }}
-              to="/"
-              onClick={hideMenu}
-            >
-              Join Us 
-            </Link>
-          </li>
-          <li>
-            <Link
-              style={{
-                color: pathname === "/" ? "#ffcc0a" : "white",
-              }}
-              to="/"
-              onClick={hideMenu}
-            >
-               <motion.img
-                variants={photoAnim}
-                src={UGFlag}
-                alt="guy with a camera"
-                onClick={hideMenu}
-                className="border__color_2"
-            />
-            </Link>
-          </li>
-          <li>
             <Link to="/" className="btn_container"
           onClick={hideMenu}>
           <button className="get_in_touch primary_bg primary_color">DOWNLOAD APP</button>
