@@ -149,6 +149,7 @@ button{
     .border__color_1{
         border:1px solid hsl(${primaryColor}, 25%);
     }
+    
     .border__color_1_a{
         border:1px solid hsla(${primaryColor}, 25%,.5);
     }
@@ -315,6 +316,7 @@ button{
     .p__0{
         padding: 0 !important;
     }
+    
 
     /* ------------------------------------- BUTTONS DISPLAY  ------------------------------*/
 

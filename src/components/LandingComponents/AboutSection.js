@@ -1,8 +1,6 @@
 import React from "react";
 import aboutUs1 from "../../img/landing-shade.svg";
-import mobileAppLandingImg from "../../img/Screenshot-1.png";
-import signsScreen from "../../img/Screenshot-2.png";
-import getStarted from "../../img/Screenshot-3.png";
+import signsScreen from "../../img/day-break.png";
 import playstoreSvg from "../../img/playstore.svg";
 import applestoreSvg from "../../img/applestore.svg";
 
@@ -37,11 +35,6 @@ const AboutSection = () => {
             src={playstoreSvg}
             alt="guy with a camera"
           />
-             <motion.img
-            variants={photoAnim}
-            src={applestoreSvg}
-            alt="guy with a camera"
-          />
           </StyledStoreImages>
         </motion.div>
 
@@ -50,16 +43,6 @@ const AboutSection = () => {
           <motion.img
             variants={photoAnim}
             src={signsScreen}
-            alt="guy with a camera"
-          />
-           <motion.img
-            variants={photoAnim}
-            src={getStarted}
-            alt="guy with a camera"
-          />
-           <motion.img
-            variants={photoAnim}
-            src={mobileAppLandingImg}
             alt="guy with a camera"
           />
         </AboutHide>
@@ -202,10 +185,9 @@ const AboutHide = styled(motion.div)`
     top: -100% !important;
     left: 0%;
     width: auto;
-    height: 30rem;
+    max-height: 40rem;
     object-fit: cover;
-    border-radius:2rem;
-    transform: rotate(10deg) !important;
+    border-radius:2.5rem;
 
     &:nth-child(1) {
       left: 35%;
